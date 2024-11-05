@@ -73,7 +73,7 @@ function SearchBar() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setShowSuggestions(true)}
-          className="w-full bg-gray-800 text-white rounded-full py-2 px-4 pl-10 pr-10 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          className="w-full bg-gray-100 text-gray-700 rounded-full py-2 px-4 pl-10 pr-10 focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
         <button type="submit" className="absolute right-3 top-2">
           <FaSearch className="text-gray-400" />
@@ -82,14 +82,14 @@ function SearchBar() {
       {showSuggestions && query.length > 2 && (
         <div className="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg">
           {isLoading ? (
-            <div className="p-2 text-gray-500">Loading...</div>
+            <div className="p-2 text-gray-700">Loading...</div>
           ) : suggestions.length > 0 ? (
             <ul>
               {suggestions.map((product) => (
                 <li
                   key={product.id}
                   onClick={() => handleSuggestionClick(product.id)}
-                  className="px-4 text-gray-500 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="px-4 text-gray-700 py-2 hover:bg-gray-100 cursor-pointer"
                 >
                   {product.title}
                 </li>
