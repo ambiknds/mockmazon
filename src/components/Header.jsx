@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart} from 'react-icons/fa';
+import {SiHomeassistantcommunitystore} from 'react-icons/si';
 import { useCart } from '../contexts/CartContext';
 import Cart from './Cart';
 import SearchBar from './SearchBar';
@@ -18,8 +19,8 @@ function Header() {
   return (
     <header className="bg-gray-900 text-white">
       <div className="container mx-auto px-6 py-3 flex items-center justify-between">
-        <Link to="/" className="font-bold text-xl">
-          Mockmazon
+        <Link to="/" className="font-bold text-3xl">
+          <SiHomeassistantcommunitystore />
         </Link>
         <div className="flex-grow flex justify-center">
           <SearchBar />

@@ -21,7 +21,7 @@ function HomePage() {
 
   return (
     <div className="container mx-auto px-6 py-8">
-      <h1 className="text-4xl font-bold mb-8">Welcome to AmazonClone</h1>
+      <h1 className="text-4xl font-bold mb-8">Welcome to Mockmazon</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((product) => (
           <Link
