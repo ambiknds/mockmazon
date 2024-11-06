@@ -19,7 +19,7 @@ function Header() {
   return (
     <header className="bg-gray-900 text-white">
       <div className="container mx-auto px-6 py-3 flex items-center justify-between">
-        <Link to="/" className="font-bold text-3xl">
+        <Link to="/" className="font-bold text-3xl mr-4">
           <SiHomeassistantcommunitystore />
         </Link>
         <div className="flex-grow flex justify-center">
